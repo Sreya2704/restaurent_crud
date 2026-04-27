@@ -1,0 +1,40 @@
+#api call for fetching all data
+
+###
+GET http://127.0.0.1:8000/api/restaurents/
+Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/restaurents/
+Content-Type: application/json
+
+{
+    "name":"Akshaya",
+    "location":"Thrissu",
+    "contact":"8362646358",
+    "email":"akshaya@gmail.com",
+    "rating":7.5
+}
+
+###
+GET http://127.0.0.1:8000/api/restaurents/3/
+Accept: application/json
+
+# api call for updating data
+###
+PUT http://127.0.0.1:8000/api/restaurents/3/
+Content-Type: application/json
+
+{
+    "name":"Akshaya",
+    "location":"Thrissur",
+    "contact":"8362646358",
+    "email":"akshaya@gmail.com",
+    "rating":7.3
+}
+
+#data deletion
+###
+DELETE http://127.0.0.1:8000/api/restaurents/2/
+Accept: application/json
