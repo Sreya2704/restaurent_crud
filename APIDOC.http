@@ -38,3 +38,34 @@ Content-Type: application/json
 ###
 DELETE http://127.0.0.1:8000/api/restaurents/2/
 Accept: application/json
+
+
+###
+POST http://127.0.0.1:8000/api/restaurants/1/dish
+Content-Type: application/json
+
+{
+    "name":"Idly",
+    "description":"idly vada",
+    "price":50,
+    "quantity":1
+}
+
+###
+GET http://127.0.0.1:8000/api/3/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/api/3/
+Content-Type: application/json
+
+{
+    "name": "Ghee Roast",
+    "description": "with vada",
+    "price": "150.00",
+    "quantity": 2
+}
+
+###
+DELETE http://127.0.0.1:8000/api/3/
+Accept: application/json
