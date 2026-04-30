@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/restaurents/',RestaurantListCreateView.as_view()),
     path('api/restaurents/<int:pk>/',RestaurantRetrieveUpdateDeleteView.as_view()),
-    path('api/restaurants/<int:pk>/dish',DishCreateView.as_view()),
+    path('api/restaurants/<int:pk>/dish/',DishCreateView.as_view()),
     path('api/<int:pk>/',DishRetrieveUpdateDeleteView.as_view()),
 ]

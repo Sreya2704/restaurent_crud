@@ -10,8 +10,8 @@ POST http://127.0.0.1:8000/api/restaurents/
 Content-Type: application/json
 
 {
-    "name":"Akshaya",
-    "location":"Thrissu",
+    "name":"Top in town",
+    "location":"palakkad",
     "contact":"8362646358",
     "email":"akshaya@gmail.com",
     "rating":7.5
@@ -29,9 +29,9 @@ Content-Type: application/json
 {
     "name":"Akshaya",
     "location":"Thrissur",
-    "contact":"8362646358",
+    "contact":"9962646358",
     "email":"akshaya@gmail.com",
-    "rating":7.3
+    "rating":7.5
 }
 
 #data deletion
@@ -41,27 +41,27 @@ Accept: application/json
 
 
 ###
-POST http://127.0.0.1:8000/api/restaurants/1/dish
+POST http://127.0.0.1:8000/api/restaurants/4/dish/
 Content-Type: application/json
 
 {
-    "name":"Idly",
-    "description":"idly vada",
-    "price":50,
+    "name":"Noodles",
+    "description":"chicken",
+    "price":400,
     "quantity":1
 }
 
 ###
-GET http://127.0.0.1:8000/api/3/
+GET http://127.0.0.1:8000/api/9/
 Accept: application/json
 
 ###
-PUT http://127.0.0.1:8000/api/3/
+PUT http://127.0.0.1:8000/api/1/
 Content-Type: application/json
 
 {
     "name": "Ghee Roast",
-    "description": "with vada",
+    "description": "with ghee and vada",
     "price": "150.00",
     "quantity": 2
 }
